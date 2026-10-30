@@ -11,25 +11,23 @@
     <style>
       :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #1c302e; background: #f5f3ee; }
       * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; padding: clamp(24px, 5vw, 72px); background-color: #f5f3ee; background-image: radial-gradient(ellipse at 40% 45%, rgba(245, 243, 238, .88), rgba(245, 243, 238, .15)), url("assets/honeycomb.svg"); background-size: 100% 100%, 84px 48.497px; }
-      header { display: flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
-      .dot { width: 7px; height: 7px; background: #537b65; border-radius: 50%; }
-      main { flex: 1; width: 100%; max-width: 1000px; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 80px 0; }
-      h1 { margin: 0 0 22px; width: min(100%, 720px); line-height: 0; }
+      body { margin: 0; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; padding: 24px clamp(20px, 5vw, 64px); background-color: #f5f3ee; background-image: radial-gradient(ellipse at center, rgba(245, 243, 238, .92), rgba(245, 243, 238, .15)), url("assets/honeycomb.svg"); background-size: 100% 100%, 84px 48.497px; }
+      main { flex: 1; width: 100%; max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 0 64px; text-align: center; }
+      h1 { margin: 0; width: min(100%, 620px); line-height: 0; }
       .logo { display: block; width: 100%; height: auto; }
-      .activity { margin: 0 0 54px; font-size: clamp(15px, 2vw, 20px); letter-spacing: .035em; }
-      .contact { width: 100%; border-top: 1px solid #ced3cb; padding-top: 28px; }
-      .contact p { margin: 0 0 12px; font-size: 15px; line-height: 1.7; color: #5b6762; }
-      a { display: inline-flex; align-items: center; gap: 18px; color: inherit; font-size: clamp(21px, 4.8vw, 36px); text-decoration: none; padding: 5px 0; border-bottom: 1px solid #91a295; overflow-wrap: anywhere; }
+      .activity { margin: 4px 0 0; font-size: clamp(15px, 2vw, 18px); letter-spacing: .08em; }
+      .contact { width: 100%; margin-top: 32px; }
+      .contact::before { content: ""; display: block; width: 48px; height: 1px; margin: 0 auto 28px; background: #aebcb0; }
+      .contact p { margin: 0 0 14px; font-size: 15px; line-height: 1.7; color: #5b6762; text-wrap: balance; }
+      a { display: inline-flex; align-items: center; justify-content: center; gap: 12px; max-width: 100%; min-height: 48px; color: inherit; font-size: clamp(20px, 5vw, 32px); text-decoration: none; padding: 6px 0; border-bottom: 1px solid #91a295; overflow-wrap: anywhere; }
       a:hover { color: #476e56; border-bottom-color: currentColor; }
       a:focus-visible { outline: 2px solid #476e56; outline-offset: 7px; border-radius: 2px; }
       a span { font-size: .8em; }
-      footer { border-top: 1px solid #ced3cb; padding-top: 20px; color: #5b6762; font-size: 12px; line-height: 1.7; }
-      @media (max-width: 480px) { main { padding: 70px 0; } .activity { margin-bottom: 42px; } }
+      footer { padding: 16px 0 4px; color: #5b6762; font-size: 12px; line-height: 1.7; text-align: center; text-wrap: balance; }
+      @media (max-width: 480px) { main { padding: 32px 0 48px; } .contact { margin-top: 28px; } .contact p { max-width: 280px; margin-left: auto; margin-right: auto; } }
     </style>
   </head>
   <body>
-    <header><span class="dot" aria-hidden="true"></span> İletişim</header>
     <main>
       <h1><img class="logo" src="assets/avava-logo-rbg.png" alt="AVAVA" width="866" height="288"></h1>
       <p class="activity">İthalat &amp; İhracat</p>
