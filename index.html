@@ -15,7 +15,8 @@
       header { display: flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
       .dot { width: 7px; height: 7px; background: #537b65; border-radius: 50%; }
       main { flex: 1; width: 100%; max-width: 1000px; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 80px 0; }
-      h1 { margin: 0 0 22px; font-size: clamp(76px, 19vw, 200px); font-weight: 500; letter-spacing: -.075em; line-height: .9; }
+      h1 { margin: 0 0 22px; width: min(100%, 720px); line-height: 0; }
+      .logo { display: block; width: 100%; height: auto; }
       .activity { margin: 0 0 54px; font-size: clamp(15px, 2vw, 20px); letter-spacing: .035em; }
       .contact { width: 100%; border-top: 1px solid #ced3cb; padding-top: 28px; }
       .contact p { margin: 0 0 12px; font-size: 15px; line-height: 1.7; color: #5b6762; }
@@ -30,7 +31,7 @@
   <body>
     <header><span class="dot" aria-hidden="true"></span> İletişim</header>
     <main>
-      <h1>AVAVA</h1>
+      <h1><img class="logo" src="assets/avava-logo.jpg" alt="AVAVA" width="1500" height="500"></h1>
       <p class="activity">İthalat &amp; İhracat</p>
       <div class="contact">
         <p>Bizimle iletişime geçmek için mesaj atabilirsiniz.</p>
