@@ -1,0 +1,9 @@
+# Private WordPress archives and extracted migration data
+/backup_*/
+/_migration/
+.DS_Store
+.env
+.env.*
+*.sql
+*.tzst
+*.zst
